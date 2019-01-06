@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">AndroidTraning</string>
+    <string name="app_name">Interval Training</string>
+    <string name="startSwitch">Start/Stop</string>
+    <string name="time1">time1:</string>
+    <string name="time2">time2:</string>
+    <string name="count1">repeat count:</string>
+    <string name="hintTime1">input active time.</string>
+    <string name="hintTime2">input rest time.</string>
+    <string name="hintCount1">input repeat count.</string>
 </resources>

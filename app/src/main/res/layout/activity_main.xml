@@ -7,34 +7,128 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="395dp"
-        android:layout_height="276dp"
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="6dp"
         android:layout_marginBottom="8dp"
-        android:gravity="right"
+        android:gravity="top"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/time1text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time1"
+            android:textSize="36sp" />
+
+        <EditText
+            android:id="@+id/time1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints="@android:string/autofill"
+            android:ems="10"
+            android:hint="@string/hintTime1"
+            android:inputType="time"
+            android:textSize="36sp"
+            tools:text="@tools:sample/date/hhmmss" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="bottom"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.100000024">
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
 
-        <LinearLayout
-            android:layout_width="191dp"
+        <Switch
+            android:id="@+id/startStopSwitch"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="end"
-            android:orientation="vertical">
+            android:text="@string/startSwitch"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@android:dimen/notification_large_icon_height"
+            android:textStyle="bold" />
+    </LinearLayout>
 
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="120dp"
-                android:layout_height="35dp"
-                android:lineSpacingExtra="8sp"
-                android:text="Gravity Right"
-                android:typeface="normal" />
-        </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
+        <TextView
+            android:id="@+id/time2text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time2"
+            android:textSize="36sp" />
+
+        <EditText
+            android:id="@+id/time2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints="@android:string/autofill"
+            android:ems="10"
+            android:hint="@string/hintTime2"
+            android:inputType="time"
+            android:textSize="36sp"
+            tools:autofillHints="@tools:sample/date/hhmmss"
+            tools:text="@tools:sample/date/hhmmss" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/count1text"
+            android:layout_width="424dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/count1"
+            android:textSize="36sp" />
+
+        <EditText
+            android:id="@+id/count1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:autofillHints="@android:string/autofill"
+            android:ems="10"
+            android:hint="@string/count1"
+            android:inputType="number"
+            android:textSize="36sp"
+            tools:text="8" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
